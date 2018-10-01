@@ -35,7 +35,20 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-#maincontent {
+
+#maincontent #mainmain{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  background-color: #f3f3f3;
+	width: 100%
+  min-height: 100%;
+  /* max-width: 800px; */
+	margin: auto;
+}
+
+#maincontent #mainrestaurant{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
