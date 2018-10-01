@@ -51,7 +51,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  /* padding: 25px; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -106,8 +105,6 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-	/* display: block; */
-	/* position: fixed; */
   height: 325px;
   width: 100%;
   background-color: #ccc;
@@ -146,7 +143,6 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  /* padding: 30px 15px 60px; */
   text-align: center;
   -webkit-column-width: 300px;
   -moz-column-width: 300px;
@@ -206,17 +202,12 @@ nav h1 a {
   background: blue none repeat scroll 0 0;
   height: 30%;
 	margin-top: 132px;
-	/* position: fixed; */
   display: inline-flex;
-  /* right: 0; */
-  /* top: 80px; */
   width: 100%;
 
 }
 .inside #map {
   background-color: #ccc;
-	/* position: fixed; */
-  /* height: 100%; */
   width: 100%;
 }
 .inside #footer {
@@ -242,9 +233,7 @@ nav h1 a {
 }
 #restaurant-address {
   font-size: 14pt;
-  /* margin: 10px 0px; */
 	text-align: center;
-	/* font-variant: small-caps; */
 }
 #restaurant-cuisine {
 	margin: auto;
@@ -253,7 +242,6 @@ nav h1 a {
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
-  /* margin: 0 0 20px; */
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
@@ -263,17 +251,11 @@ nav h1 a {
 	margin: auto;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  /* padding: 140px 40px 30px; */
   width: 100%;
-	/* display: flex;
-	flex-direction: column;
-	align-items: center */
 }
 #reviews-container {
-  /* padding: 30px 20px 80px; */
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 }
 #reviews-container h2 {
   color: #f58500;
@@ -282,7 +264,6 @@ nav h1 a {
   letter-spacing: -1px;
   padding-bottom: 1pt;
 	margin: 30px 20px 30px;;
-	/* display: block; */
 }
 #reviews-list {
   margin: auto;
@@ -308,10 +289,6 @@ nav h1 a {
 #restaurant-hours {
 	font-variant: small-caps;
 	display: block;
-	/* margin: auto;
-	width: 80%;
-	justify-content: center;
-	 */
 }
 
 #restaurant-hours tr {
@@ -322,21 +299,17 @@ nav h1 a {
 }
 
 #restaurant-hours td {
-	/* font-size: 13pt; */
   color: #666;
 	width: 100%;
 	padding-left: 8px;
 	padding-right: 8px;
-	/* text-align: justify; */
-	/* justify-content: space-around; */
 }
 
-#restaurant-hours td:nth-child(1)
-{
+#restaurant-hours td:nth-child(1) {
     text-align: right;
 		border-right: 1px solid black;
 }
-#restaurant-hours td:nth-child(2)
-{
-    text-align: left;
+
+#restaurant-hours td:nth-child(2) {
+  text-align: left;
 }
