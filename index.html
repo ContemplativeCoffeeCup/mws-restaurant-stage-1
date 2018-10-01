@@ -24,11 +24,11 @@
     </section>
     <section>
       <div class="filter-options">
-        <h2>Filter Results</h2>
-        <select tabindex="3"id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <h2 id="filter-heading">Filter Results</h2>
+        <select tabindex="3" aria-describedby="filter-heading" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select tabindex="3" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select tabindex="3" aria-describedby="filter-heading" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>

@@ -18,11 +18,11 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1 tabindex="1"><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
+      <li tabindex="2"><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -33,11 +33,11 @@
   <main id="mainrestaurant">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" aria-label="map" role="application"></div>
+      <div id="map" tabindex="3" aria-label="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
+    <section tabindex="4" id="restaurant-container">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
@@ -46,7 +46,7 @@
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section tabindex="5" id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
