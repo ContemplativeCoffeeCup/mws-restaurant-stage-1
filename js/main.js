@@ -80,9 +80,9 @@ initMap = () => {
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiY29udGVtcGxhdGl2ZWNvZmZlZWN1cCIsImEiOiJjam1neTIwMHcwNDlzM3BvZHp4cmZhYmE3In0.n4Fe4dOgIPru2Sx_x-WdrA',
     maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: 'Map data &copy; <a aria-hidden="true" tabindex="-1" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      '<a aria-hidden="true" tabindex="-1" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a aria-hidden="true" tabindex="-1" href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
   }).addTo(newMap);
 
@@ -157,7 +157,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
-  li.tabIndex = '4';
+  li.tabIndex = '0';
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
@@ -180,7 +180,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  more.tabIndex = '4';
+  more.tabIndex = '0';
   li.append(more)
 
   return li
@@ -193,7 +193,6 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap)
-    marker.tabIndex = '-1';
     marker.on("click", onClick);
     function onClick() {
       window.location.href = marker.options.url;
@@ -202,6 +201,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
+
+
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
