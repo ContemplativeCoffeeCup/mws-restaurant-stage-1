@@ -1,3 +1,5 @@
+console.log('Service Worker: Registered');
+
 const cacheFiles = [
   '/',
   '/index.html',
@@ -18,3 +20,12 @@ const cacheFiles = [
   '/img/9.jpg',
   '/img/10.jpg'
 ];
+
+
+self.addEventListener('install', function(e) {
+  e.waitUntil(
+    caches.open('v1').then(function(cache) {
+      return cache.addAll(cacheFiles);
+    })
+  );
+});
