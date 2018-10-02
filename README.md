@@ -6,7 +6,7 @@ For the **Restaurant Reviews** projects,I incrementally converted a static webpa
 
 ### Prerequisites
 
-Python [website](https://www.python.org/)
+[Python](https://www.python.org/)
 
 
 ### Installing / Deploying
