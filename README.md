@@ -20,3 +20,4 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 
 ## Built With
 [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/).
+Special thanks to [Matthew Cranford](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-4-service-workers/)
