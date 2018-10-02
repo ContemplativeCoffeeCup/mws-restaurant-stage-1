@@ -24,9 +24,9 @@ initMap = () => {
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
         mapboxToken: 'pk.eyJ1IjoiY29udGVtcGxhdGl2ZWNvZmZlZWN1cCIsImEiOiJjam1neTIwMHcwNDlzM3BvZHp4cmZhYmE3In0.n4Fe4dOgIPru2Sx_x-WdrA',
         maxZoom: 18,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        attribution: 'Map data &copy; <a tabindex="-1" aria-hidden="true" href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a tabindex="-1" aria-hidden="true" href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a tabindex="-1" aria-hidden="true" href="https://www.mapbox.com/">Mapbox</a>',
         id: 'mapbox.streets'
       }).addTo(newMap);
       fillBreadcrumb();
